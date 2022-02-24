@@ -1,6 +1,6 @@
-@import "../helpers/mixin";
+// @import "../helpers/mixin";
 @import '../../../style.css';
-@import '../helpers/animations.css';
+@import '../helpers/animations.scss';
 
 main {
   display: flex;
@@ -13,9 +13,6 @@ main {
   #definition {
     width: 50%;
     padding-right: 6vh;
-    // animation: display 5s ease;
-    // -webkit-animation: display 5s ease;
-    // overflow: hidden;
     img {
       position: absolute;
       left: 0;
@@ -66,6 +63,11 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 2vh;
+    animation: opacity 3s forwards;
+    -webkit-animation: opacity 3s forwards;
+    animation-play-state: paused;
+    opacity: 0;
+    transform: translateY(10vh);
     > h1 {
       font-size: 4em;
       color: var(--sec-color);
@@ -290,7 +292,6 @@ footer {
       }
       &:hover li {
         top: -10%;
-        box-shadow: 0 30px 20px -20px white;
       }
     }
     p {

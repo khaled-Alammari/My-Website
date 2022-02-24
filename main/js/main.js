@@ -1,4 +1,3 @@
-const header = document.getElementsByTagName('header')[0];
 const logo = header.children[0];
 const toRoads = document.querySelector('header nav ul li');
 const roads = document.getElementById('roads');
@@ -23,21 +22,18 @@ leftArrow.className = 'unclickable';
 // 100 is the height of the header.
 toRoads.onclick = _ => window.scrollTo(0, roads.offsetTop - 100);
 
-if (window.scrollY < 50) {
-    header.style.height = '15vh';
-};
-window.onscroll = _ => {
-    if (window.scrollY < 50) {
-        header.style.height = '15vh';
-    } else {
-        header.style.height = '12vh';
-    };
+console.log(roads.offsetTop)
+
+window.addEventListener('scroll', _ => {
     if (window.scrollY >= roads.offsetTop - 300 && window.scrollY < roads.offsetTop + 200) {
         toRoads.className = 'on';
     } else {
         toRoads.className = 'off';
     };
-};
+    if (window.scrollY >= roads.offsetTop - 500) {
+        roads.style.animationPlayState = 'running';
+    }
+});
 
 /*
     how can I know if there is a hidden elements in the left side or not?
@@ -71,7 +67,6 @@ rightArrow.onclick = _ => {
             rightArrow.className = 'unclickable';
         } else {
             carousel.style.left = `calc(${carousel.style.left} - 25vw)`;
-            console.log('I am the right arrow')
         }
         leftArrow.classList.remove('unclickable')
     }

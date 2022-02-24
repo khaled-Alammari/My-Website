@@ -1,4 +1,12 @@
 @keyframes opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(10vh);
+        -webkit-transform: translateY(10vh);
+        -moz-transform: translateY(10vh);
+        -ms-transform: translateY(10vh);
+        -o-transform: translateY(10vh);
+    }
     100% {
         opacity: 1;
         transform: translateY(0);
