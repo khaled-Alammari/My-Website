@@ -145,6 +145,10 @@ main {
           -ms-transition: 0.5s;
           -o-transition: 0.5s;
           .element {
+            &.disabled {
+              filter: grayscale(100%);
+              cursor: default;
+            }
             text-decoration: none;
             color: white;
             display: flex;
@@ -202,7 +206,7 @@ main {
               -ms-transition: 0.5s;
               -o-transition: 0.5s;
             }
-            &:hover {
+            &:hover:not(.disabled) {
               #details {
                 top: 20%;
               }

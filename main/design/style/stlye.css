@@ -53,19 +53,6 @@ main {
   gap: 50vh;
 }
 
-main > svg {
-  position: absolute;
-  z-index: -100000;
-  top: 100%;
-  animation: opacity 3s forwards;
-  -webkit-animation: opacity 3s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  opacity: 0;
-  -webkit-transform: translateY(10vh);
-          transform: translateY(10vh);
-}
-
 main #definition {
   width: 50%;
   padding-right: 6vh;
@@ -274,6 +261,12 @@ main #roads #carousel #elements-con #elements .element {
   cursor: pointer;
 }
 
+main #roads #carousel #elements-con #elements .element.disabled {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: default;
+}
+
 main #roads #carousel #elements-con #elements .element #title {
   height: 20%;
   font-weight: bold;
@@ -335,11 +328,11 @@ main #roads #carousel #elements-con #elements .element #details {
   -o-transition: 0.5s;
 }
 
-main #roads #carousel #elements-con #elements .element:hover #details {
+main #roads #carousel #elements-con #elements .element:hover:not(.disabled) #details {
   top: 20%;
 }
 
-main #roads #carousel #elements-con #elements .element:hover #photo img {
+main #roads #carousel #elements-con #elements .element:hover:not(.disabled) #photo img {
   transform: scale(1.1) rotate(5deg);
   -webkit-transform: scale(1.1) rotate(5deg);
   -moz-transform: scale(1.1) rotate(5deg);
