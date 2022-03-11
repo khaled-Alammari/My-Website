@@ -22,8 +22,6 @@ leftArrow.className = 'unclickable';
 // 100 is the height of the header.
 toRoads.onclick = _ => window.scrollTo(0, roads.offsetTop - 100);
 
-console.log(roads.offsetTop)
-
 window.addEventListener('scroll', _ => {
     if (window.scrollY >= roads.offsetTop - 300 && window.scrollY < roads.offsetTop + 200) {
         toRoads.className = 'on';
