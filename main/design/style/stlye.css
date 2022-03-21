@@ -318,15 +318,13 @@ main #roads #carousel #elements-con #elements .element #details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
   font-size: 1.4em;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  text-align: justify;
 }
 
 main #roads #carousel #elements-con #elements .element:hover:not(.disabled) #details {

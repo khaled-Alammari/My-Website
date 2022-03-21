@@ -199,13 +199,13 @@ main {
               height: 80%;
               padding: 10%;
               display: flex;
-              align-items: end;
               font-size: 1.4em;
               transition: 0.5s;
               -webkit-transition: 0.5s;
               -moz-transition: 0.5s;
               -ms-transition: 0.5s;
               -o-transition: 0.5s;
+              text-align: justify;
             }
             &:hover:not(.disabled) {
               #details {
