@@ -1,6 +1,0 @@
-@mixin DR($p, $t, $r, $b:$t, $l:$r) {
-    #{$p}-top: $t;
-    #{$p}-right: $r;
-    #{$p}-bottom: $b;
-    #{$p}-left: $l;
-}
