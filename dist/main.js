@@ -1,0 +1,1 @@
+const header=document.getElementsByTagName("header")[0];window.scrollY<50&&(header.style.height="15vh"),window.addEventListener("scroll",e=>{window.scrollY<50?header.style.height="15vh":header.style.height="12vh"});
