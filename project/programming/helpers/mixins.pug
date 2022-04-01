@@ -1,0 +1,31 @@
+//- Cards
+mixin card(name, title, imgSrc)
+    div(class="card " + name)
+        .container
+            .photo
+                img(src=imgSrc alt=title)
+            h2= title
+
+
+
+//- Sources Of Topic-2
+mixin source-T2(link, title, comment, avatarSrc, mainImgSrc)
+    a(class="source" href=link target="blank")
+        if comment
+            h2 #{title} #[sub #{comment}]
+        else
+            h2 #{title}
+        .photo
+            .avatar
+                img(src=avatarSrc alt=title + " face")
+            .main-img
+                img(src=mainImgSrc alt=title + " banner")
+
+
+
+
+mixin source-T3(link, title, imgSrc)
+    a(href=link target="_blank")
+        h2= title
+        .photo
+            img(src=imgSrc alt=title)

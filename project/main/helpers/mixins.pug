@@ -1,0 +1,13 @@
+mixin element(link, name, disabled, title, img, details)
+    if disabled
+        - name += ' disabled'
+        - disabled = 'الصفحة قيد التطوير'
+    else
+        - disabled = ""
+    a(href=link class="element " + name title=disabled)
+        #title= title
+        #photo
+            img(src=img alt=title)
+        #details= details
+
+

@@ -1,0 +1,12 @@
+mixin item(name, lang, num, link, imgSrc)
+    if lang == 'e'
+        - lang = 'انجليزي'
+    else if lang == 'a'
+        - lang = 'عربي'
+    else
+        - lang = 'انجليزي وعربي'
+    a(class="item" + num target="_blank" href=link)
+        .photo
+            img(src=imgSrc alt=name)
+        .name #{name}
+        .lang #{lang}

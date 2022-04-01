@@ -1,0 +1,27 @@
+mixin sec-1-src(link, title, imgSrc, para)
+    a(class="source" href=link target="_blank")
+        h2= title
+        .photo
+            img(src=imgSrc alt=title)
+        if para
+            p= para
+
+mixin exception(title, link)
+    a(class="btn" href=link target="blank")
+        span= title
+        img(src="../img/downloaddark.png" alt="تنزيل")
+        img(src="../img/downloadblue.png" alt="تنزيل")
+
+mixin account(title, link, social, imgSrc)
+    a(class="source" href=link target="_blank")
+        h2= title
+        .social
+            if social == 'y'
+                - social = '../img/icons8-youtube.svg'
+                - icon = 'youtube'
+            else
+                - social = '../img/icons8-instagram-old.svg'
+                - icon = 'instagram'
+            img(src=social alt=icon)
+        .photo
+            img(src=imgSrc alt=title)

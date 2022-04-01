@@ -1,0 +1,25 @@
+doctype
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv)
+        block title
+            title خالد | الصفحة الرئيسية
+        link(rel='stylesheet' href='./style.css')
+        link(rel="stylesheet" href="../style.css")
+    body
+        header
+            block logo
+                a(href="../main/index.html")
+                    #logo
+            nav
+                ul
+                    block nav
+                        li
+                            a(href="../main/index.html") المجالات
+                    li.disabled
+                        a(title="الصفحة قيد التطوير")
+                            | أعمالي
+        block content
+            script(src="./main.js")
+            script(src="../main.js")
