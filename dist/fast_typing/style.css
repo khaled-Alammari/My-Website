@@ -1,1 +1,210 @@
-main{margin-top:40vh}main>.title{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:100%;margin-bottom:10vh}main>.title .h2s-con{width:300px;height:9vh;overflow:hidden;position:relative}main>.title .h2s-con .h2s{display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;left:-600px;-webkit-transition:.5s;transition:.5s}main>.title .h2s-con .h2s h2{font-size:3em;width:300px;text-align:center}main>.title .left-arrow,main>.title .right-arrow{-webkit-filter:grayscale(100%);filter:grayscale(100%);background-color:var(--sec-color);width:2vw;-webkit-clip-path:polygon(0 0, 100% 50%, 0 100%);clip-path:polygon(0 0, 100% 50%, 0 100%)}main>.title .left-arrow.active,main>.title .right-arrow.active{background-color:var(--sec-color);-webkit-filter:grayscale(0%);filter:grayscale(0%);cursor:pointer}main>.title .left-arrow.active:hover,main>.title .right-arrow.active:hover{opacity:.8}main>.title .left-arrow{-webkit-transform:rotate(180deg);transform:rotate(180deg)}main .step{display:none}main .step.active{display:initial}main .step .content{direction:rtl;padding:0 10vh}main .step .content p{font-size:1.5em}main .step .content p span{display:block;font-size:2.5rem;font-weight:bold;color:var(--sec-color);margin-bottom:2vh}main .step .content .items{display:-webkit-box;display:-ms-flexbox;display:flex;margin:5vh 0;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:5vh}main .step .content .items a{position:relative;color:#fff;text-decoration:none}main .step .content .items a.item1 img{margin-top:-120px}main .step .content .items a.item2 img{margin-top:-200px}main .step .content .items a.item3 img{margin-top:-80px}main .step .content .items a.item4 img{margin-top:-150px}main .step .content .items a.item5 img{margin-top:-60px}main .step .content .items a.item6 img{margin-top:-120px}main .step .content .items a:hover{opacity:.9}main .step .content .items a .photo{height:50vh;overflow:hidden}main .step .content .items a .photo img{width:100%}main .step .content .items a .lang,main .step .content .items a .name{position:absolute;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:rgba(0,0,0,.8);font-weight:bold;font-size:2em;display:-webkit-box;display:-ms-flexbox;display:flex}main .step .content .items a .lang{bottom:0;right:0;padding-right:2vh;height:10vh;width:32vh}main .step .content .items a .name{top:0;left:0;-webkit-box-pack:left;-ms-flex-pack:left;justify-content:left;padding-left:2vh;height:12vh;width:40vh}main .s-2{direction:rtl}main .s-2 .advice{padding:1vw 2vw;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:2vh;width:100%}main .s-2 .advice h1{color:var(--sec-color);cursor:pointer;position:relative;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}main .s-2 .advice h1::before{content:"";position:absolute;height:2vw;width:1vw;background-color:var(--sec-color);left:0;top:0;-webkit-transform:translateX(-200%);transform:translateX(-200%);-webkit-transition:.5s;transition:.5s;-webkit-clip-path:polygon(0 50%, 100% 0, 100% 100%);clip-path:polygon(0 50%, 100% 0, 100% 100%)}main .s-2 .advice h1 kbd{border-radius:10px;background-color:gray;padding:8px 16px;color:#fff;font-size:.9em;-webkit-box-shadow:3px 3px #b6b6b6 inset,-3px -3px #575757 inset;box-shadow:3px 3px #b6b6b6 inset,-3px -3px #575757 inset}main .s-2 .advice h1 kbd img{-webkit-transform:translateY(20%);transform:translateY(20%)}main .s-2 .advice p{font-size:1.2em;width:75%;display:none}main .s-2 .advice.active h1::before{-webkit-transform:translateX(-200%) rotate(-90deg);transform:translateX(-200%) rotate(-90deg)}main .s-2 .advice.active p{display:initial}
+main {
+  margin-top: 40vh;
+}
+main > .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 10vh;
+}
+main > .title .h2s-con {
+  width: 300px;
+  height: 9vh;
+  overflow: hidden;
+  position: relative;
+}
+main > .title .h2s-con .h2s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: -600px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main > .title .h2s-con .h2s h2 {
+  font-size: 3em;
+  width: 300px;
+  text-align: center;
+}
+main > .title .left-arrow, main > .title .right-arrow {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  background-color: var(--sec-color);
+  width: 2vw;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+main > .title .left-arrow.active, main > .title .right-arrow.active {
+  background-color: var(--sec-color);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  cursor: pointer;
+}
+main > .title .left-arrow.active:hover, main > .title .right-arrow.active:hover {
+  opacity: 0.8;
+}
+main > .title .left-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+main .step {
+  display: none;
+}
+main .step.active {
+  display: initial;
+}
+main .step .content {
+  direction: rtl;
+  padding: 0 10vh;
+}
+main .step .content p {
+  font-size: 1.5em;
+}
+main .step .content p span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--sec-color);
+  margin-bottom: 2vh;
+}
+main .step .content .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5vh 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5vh;
+}
+main .step .content .items a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+main .step .content .items a.item1 img {
+  margin-top: -120px;
+}
+main .step .content .items a.item2 img {
+  margin-top: -200px;
+}
+main .step .content .items a.item3 img {
+  margin-top: -80px;
+}
+main .step .content .items a.item4 img {
+  margin-top: -150px;
+}
+main .step .content .items a.item5 img {
+  margin-top: -60px;
+}
+main .step .content .items a.item6 img {
+  margin-top: -120px;
+}
+main .step .content .items a:hover {
+  opacity: 0.9;
+}
+main .step .content .items a .photo {
+  height: 50vh;
+  overflow: hidden;
+}
+main .step .content .items a .photo img {
+  width: 100%;
+}
+main .step .content .items a .lang, main .step .content .items a .name {
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .step .content .items a .lang {
+  bottom: 0;
+  right: 0;
+  padding-right: 2vh;
+  height: 10vh;
+  width: 32vh;
+}
+main .step .content .items a .name {
+  top: 0;
+  left: 0;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 2vh;
+  height: 12vh;
+  width: 40vh;
+}
+main .s-2 {
+  direction: rtl;
+}
+main .s-2 .advice {
+  padding: 1vw 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+}
+main .s-2 .advice h1 {
+  color: var(--sec-color);
+  cursor: pointer;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .s-2 .advice h1::before {
+  content: "";
+  position: absolute;
+  height: 2vw;
+  width: 1vw;
+  background-color: var(--sec-color);
+  left: 0;
+  top: 0;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+          clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+main .s-2 .advice h1 kbd {
+  border-radius: 10px;
+  background-color: gray;
+  padding: 8px 16px;
+  color: white;
+  font-size: 0.9em;
+  -webkit-box-shadow: 3px 3px #b6b6b6 inset, -3px -3px #575757 inset;
+          box-shadow: 3px 3px #b6b6b6 inset, -3px -3px #575757 inset;
+}
+main .s-2 .advice h1 kbd img {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+main .s-2 .advice p {
+  font-size: 1.2em;
+  width: 75%;
+  display: none;
+}
+main .s-2 .advice.active h1::before {
+  -webkit-transform: translateX(-200%) rotate(-90deg);
+          transform: translateX(-200%) rotate(-90deg);
+}
+main .s-2 .advice.active p {
+  display: initial;
+}

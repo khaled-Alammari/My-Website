@@ -1,1 +1,79 @@
-const secs=document.getElementsByTagName("main")[0],title=secs.children[0],h2s=document.getElementsByClassName("h2s")[0],leftArrow=title.children[0],theStep=title.children[1],rightArrow=title.children[2],advice=document.getElementsByClassName("advice");let actSec=document.querySelector("section.active");for(let t=0;t<advice.length;t++)advice[t].children[0].children[0].textContent=t+1,advice[t].onclick=e=>{for(let e=0;e<advice.length;e++)advice[t]!==advice[e]&&(advice[e].classList.remove("active"),console.log(advice[e]));advice[t].classList.toggle("active")};function giveNum(e){return Array.from(e).filter(e=>+(e+1)).join("")}h2s.style.left=-300*(h2s.children.length-1)+"px",leftArrow.onclick=e=>{if(2===leftArrow.classList.length){for(let e=1;e<secs.children.length;e++)secs.children[e].classList.remove("active");secs.children[+actSec.classList[1][2]+2].classList.add("active"),actSec=document.querySelector("section.active"),h2s.style.left=+giveNum(h2s.style.left)+300+"px",rightArrow.classList.add("active"),0==+giveNum(h2s.style.left)&&leftArrow.classList.remove("active")}},rightArrow.onclick=e=>{if(2===rightArrow.classList.length){for(let e=1;e<secs.children.length;e++)secs.children[e].classList.remove("active");secs.children[+actSec.classList[1][2]].classList.add("active"),actSec=document.querySelector("section.active"),h2s.style.left=+giveNum(h2s.style.left)-300+"px",leftArrow.classList.add("active"),+giveNum(h2s.style.left)==-300*(h2s.children.length-1)&&rightArrow.classList.remove("active")}};
+const secs = document.getElementsByTagName('main')[0];
+const title = secs.children[0];
+const h2s = document.getElementsByClassName('h2s')[0];
+const leftArrow = title.children[0];
+const theStep = title.children[1];
+const rightArrow = title.children[2];
+const advice = document.getElementsByClassName('advice');
+let actSec = document.querySelector('section.active');
+
+for (let i = 0; i < advice.length; i++) {
+  advice[i].children[0].children[0].textContent = i + 1;
+
+  advice[i].onclick = _ => {
+    for (let j = 0; j < advice.length; j++) {
+      if (advice[i] !== advice[j]) {
+        advice[j].classList.remove('active');
+        console.log(advice[j]);
+      }
+
+      ;
+    }
+
+    ;
+    advice[i].classList.toggle('active');
+  };
+}
+
+;
+h2s.style.left = `${(h2s.children.length - 1) * -300}px`;
+
+function giveNum(s) {
+  return Array.from(s).filter(e => +(e + 1)).join('');
+}
+
+;
+
+leftArrow.onclick = _ => {
+  if (leftArrow.classList.length === 2) {
+    for (let i = 1; i < secs.children.length; i++) {
+      secs.children[i].classList.remove('active');
+    }
+
+    ;
+    secs.children[+actSec.classList[1][2] + 2].classList.add('active');
+    actSec = document.querySelector('section.active');
+    h2s.style.left = `${+giveNum(h2s.style.left) + 300}px`;
+    rightArrow.classList.add('active');
+
+    if (+giveNum(h2s.style.left) === 0) {
+      leftArrow.classList.remove('active');
+    }
+
+    ;
+  }
+
+  ;
+};
+
+rightArrow.onclick = _ => {
+  if (rightArrow.classList.length === 2) {
+    for (let i = 1; i < secs.children.length; i++) {
+      secs.children[i].classList.remove('active');
+    }
+
+    ;
+    secs.children[+actSec.classList[1][2]].classList.add('active');
+    actSec = document.querySelector('section.active');
+    h2s.style.left = `${+giveNum(h2s.style.left) - 300}px`;
+    leftArrow.classList.add('active');
+
+    if (+giveNum(h2s.style.left) === (h2s.children.length - 1) * -300) {
+      rightArrow.classList.remove('active');
+    }
+
+    ;
+  }
+
+  ;
+};

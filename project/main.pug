@@ -3,16 +3,22 @@ html
     head
         meta(charset="UTF-8")
         meta(http-equiv)
+        //- meta(content="width=device-width, initial-scale=1" name="viewport")
         block title
             title خالد | الصفحة الرئيسية
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&amp;display=swap")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&amp;display=swap")
         link(rel='stylesheet' href='./style.css')
         link(rel="stylesheet" href="../style.css")
+
     body
         header
             block logo
                 a(href="../main/index.html")
                     #logo
             nav
+                .menu
+                    img(src="../img/icons8-menu-48.png" alt="menu")
                 ul
                     block nav
                         li
@@ -20,6 +26,17 @@ html
                     li.disabled
                         a(title="الصفحة قيد التطوير")
                             | أعمالي
+        .dropdown-menu
+            ul
+                .close-menu
+                    img(src="../img/icons8-close-96.png" alt='close')
+                block dropdown
+                    li
+                        a(href="../main/index.html") المجالات
+                li.disabled
+                    a(title="الصفحة قيد التطوير")
+                        | أعمالي
         block content
-            script(src="./main.js")
             script(src="../main.js")
+            script(src="./main.js")
+            script(src="http://localhost:35729/livereload.js")

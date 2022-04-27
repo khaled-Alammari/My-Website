@@ -1,1 +1,493 @@
-@-webkit-keyframes opacity{0%{opacity:0;transform:translateY(10vh);-webkit-transform:translateY(10vh);-moz-transform:translateY(10vh);-ms-transform:translateY(10vh);-o-transform:translateY(10vh)}100%{opacity:1;transform:translateY(0);-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0)}}@keyframes opacity{0%{opacity:0;transform:translateY(10vh);-webkit-transform:translateY(10vh);-moz-transform:translateY(10vh);-ms-transform:translateY(10vh);-o-transform:translateY(10vh)}100%{opacity:1;transform:translateY(0);-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0)}}main{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-top:12vh;padding-top:12vh;direction:rtl;gap:50vh}main #definition{width:50%;padding-right:6vh}main #definition img{position:absolute;left:0;z-index:-2;top:25%;width:50%;opacity:0;animation:opacity 3s .5s forwards;-webkit-animation:opacity 3s .5s forwards;transform:translateY(10vh);-webkit-transform:translateY(10vh);-moz-transform:translateY(10vh);-ms-transform:translateY(10vh);-o-transform:translateY(10vh)}main #definition #content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:3vh;position:relative;opacity:0;animation:opacity 3s forwards;-webkit-animation:opacity 3s forwards;transform:translateY(10vh);-webkit-transform:translateY(10vh);-moz-transform:translateY(10vh);-ms-transform:translateY(10vh);-o-transform:translateY(10vh)}main #definition #content h1{font-size:4.5em}main #definition #content h1 span{color:var(--sec-color)}main #definition #content p{position:relative;font-size:1.5em;text-align:justify}main #definition #content p span{font-size:75%;display:block;color:var(--sec-color)}main #roads{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:2vh;animation:opacity 3s forwards;-webkit-animation:opacity 3s forwards;-webkit-animation-play-state:paused;animation-play-state:paused;opacity:0;-webkit-transform:translateY(10vh);transform:translateY(10vh)}main #roads>h1{font-size:4em;color:var(--sec-color)}main #roads #carousel{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative;width:100%;height:30vw}main #roads #carousel #left-arrow,main #roads #carousel #right-arrow{z-index:3;position:absolute;background-color:#09a6f3;height:100%;width:10vw;cursor:pointer}main #roads #carousel #left-arrow:not(.unclickable):hover,main #roads #carousel #right-arrow:not(.unclickable):hover{background-color:#097db8}main #roads #carousel #left-arrow:not(.unclickable):hover::before,main #roads #carousel #right-arrow:not(.unclickable):hover::before{opacity:.8}main #roads #carousel #left-arrow.unclickable,main #roads #carousel #right-arrow.unclickable{filter:grayscale(100%);-webkit-filter:grayscale(100%);background-color:#6d6d6d;cursor:default}main #roads #carousel #left-arrow.unclickable::before,main #roads #carousel #right-arrow.unclickable::before{background-color:#a8a7a7}main #roads #carousel #left-arrow::before,main #roads #carousel #right-arrow::before{content:"";position:absolute;background-color:#fff;height:10vh;width:5vh;top:calc(50% - 5vh);left:calc(50% - 2.5vh);-webkit-clip-path:polygon(0 0, 50% 22%, 100% 50%, 50% 77%, 0 100%);clip-path:polygon(0 0, 50% 22%, 100% 50%, 50% 77%, 0 100%)}main #roads #carousel #left-arrow{left:0;border-top-left-radius:50%;border-bottom-left-radius:50%}main #roads #carousel #left-arrow::before{transform:rotate(180deg);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg)}main #roads #carousel #right-arrow{right:0;border-top-right-radius:50%;border-bottom-right-radius:50%}main #roads #carousel #elements-con{width:80vw;overflow:hidden;position:relative;direction:ltr}main #roads #carousel #elements-con #elements{display:-webkit-box;display:-ms-flexbox;display:flex;gap:1vw;position:absolute;transition:.5s;-webkit-transition:.5s;-moz-transition:.5s;-ms-transition:.5s;-o-transition:.5s}main #roads #carousel #elements-con #elements .element{text-decoration:none;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;background-color:#fff;width:25vw;height:30vw;overflow:hidden;position:relative;cursor:pointer}main #roads #carousel #elements-con #elements .element.disabled{-webkit-filter:grayscale(100%);filter:grayscale(100%);cursor:default}main #roads #carousel #elements-con #elements .element #title{height:20%;font-weight:bold;color:#000;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:2;-webkit-box-shadow:0 0 10px gray;box-shadow:0 0 10px gray;font-size:2.5vw}main #roads #carousel #elements-con #elements .element #photo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:80%;overflow:hidden}main #roads #carousel #elements-con #elements .element #photo img{height:100%;transition:.5s;-webkit-transition:.5s;-moz-transition:.5s;-ms-transition:.5s;-o-transition:.5s}main #roads #carousel #elements-con #elements .element #details{direction:rtl;position:absolute;z-index:1;background-color:rgba(18,187,145,.8);top:100%;height:80%;padding:10%;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:1.4em;transition:.5s;-webkit-transition:.5s;-moz-transition:.5s;-ms-transition:.5s;-o-transition:.5s;text-align:justify}main #roads #carousel #elements-con #elements .element:hover:not(.disabled) #details{top:20%}main #roads #carousel #elements-con #elements .element:hover:not(.disabled) #photo img{transform:scale(1.1) rotate(5deg);-webkit-transform:scale(1.1) rotate(5deg);-moz-transform:scale(1.1) rotate(5deg);-ms-transform:scale(1.1) rotate(5deg);-o-transform:scale(1.1) rotate(5deg)}footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-top:30vh}footer #photo{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex}footer #photo img{width:100%;transform:translateY(10%);-webkit-transform:translateY(10%);-moz-transform:translateY(10%);-ms-transform:translateY(10%);-o-transform:translateY(10%)}footer .con1{background-color:#181b1d;height:50vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-box-shadow:0 0 50px #000;box-shadow:0 0 50px #000}footer .con2{background-color:#101213;height:46vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;width:100%;-webkit-box-shadow:0 0 50px #000;box-shadow:0 0 50px #000}footer #content{-webkit-box-shadow:0 0 50px #000;box-shadow:0 0 50px #000;width:100%;background-color:#0d0f0f;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end;padding:10vh;gap:2em;height:40vh}footer #content ul{list-style:none;-ms-flex-item-align:center;align-self:center;position:relative;height:48px;width:48px;cursor:pointer}footer #content ul li{transition:.2s;-webkit-transition:.2s;-moz-transition:.2s;-ms-transition:.2s;-o-transition:.2s;position:absolute;top:0;left:0;height:100%;width:100%}footer #content ul li a{height:100%;width:100%}footer #content ul li a img{height:100%;width:100%}footer #content ul:hover li{top:-10%}footer #content p{-ms-flex-item-align:center;align-self:center;letter-spacing:1px;font-weight:800}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+    -webkit-transform: translateY(10vh);
+    -moz-transform: translateY(10vh);
+    -ms-transform: translateY(10vh);
+    -o-transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+    -webkit-transform: translateY(10vh);
+    -moz-transform: translateY(10vh);
+    -ms-transform: translateY(10vh);
+    -o-transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12vh;
+  padding-top: 12vh;
+  direction: rtl;
+  gap: 20vh;
+}
+main #definition {
+  padding-right: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: ltr;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+main #definition img {
+  top: 25%;
+  width: 50%;
+  opacity: 0;
+  -webkit-animation: opacity 3s 0.5s forwards;
+          animation: opacity 3s 0.5s forwards;
+  -webkit-transform: translateY(10vh);
+          transform: translateY(10vh);
+}
+main #definition #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vh;
+  position: relative;
+  opacity: 0;
+  -webkit-animation: opacity 3s forwards;
+          animation: opacity 3s forwards;
+  -webkit-transform: translateY(10vh);
+          transform: translateY(10vh);
+  padding-left: 10vh;
+  width: 50%;
+  direction: rtl;
+}
+main #definition #content h1 {
+  font-size: 4em;
+  font-weight: 400;
+}
+main #definition #content h1 span {
+  color: var(--sec-color);
+}
+main #definition #content p {
+  position: relative;
+  font-size: 1.5em;
+  text-align: justify;
+}
+main #definition #content p span {
+  font-size: 75%;
+  display: block;
+  color: var(--sec-color);
+}
+main .roads #roads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vh;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+main .roads #roads > h2 {
+  font-size: 4em;
+  font-weight: 600;
+  color: var(--sec-color);
+}
+main .roads #roads #carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 30vw;
+  direction: ltr;
+}
+main .roads #roads #carousel #left-arrow,
+main .roads #roads #carousel #right-arrow {
+  height: 100%;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+main .roads #roads #carousel #left-arrow:not(.unclickable):hover img,
+main .roads #roads #carousel #right-arrow:not(.unclickable):hover img {
+  opacity: 0.8;
+}
+main .roads #roads #carousel #left-arrow.unclickable,
+main .roads #roads #carousel #right-arrow.unclickable {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: default;
+}
+main .roads #roads #carousel #left-arrow.unclickable img,
+main .roads #roads #carousel #right-arrow.unclickable img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+main .roads #roads #carousel #left-arrow img,
+main .roads #roads #carousel #right-arrow img {
+  width: 60%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+main .roads #roads #carousel #left-arrow {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+main .roads #roads #carousel #left-arrow img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+main .roads #roads #carousel #right-arrow {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+main .roads #roads #carousel #elements-con {
+  width: 80vw;
+  overflow: hidden;
+  position: relative;
+  direction: ltr;
+  border-left: 1vw solid var(--sec-color);
+  border-right: 1vw solid var(--sec-color);
+}
+main .roads #roads #carousel #elements-con #elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vw;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .roads #roads #carousel #elements-con #elements .element {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  height: 30vw;
+  width: 24.666vw;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+main .roads #roads #carousel #elements-con #elements .element.disabled {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: default;
+}
+main .roads #roads #carousel #elements-con #elements .element #title {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  height: 20%;
+  font-weight: 600;
+  background-color: #2e333a;
+  color: var(--sec-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 10px black, 0 0 25px inset black;
+          box-shadow: 0 0 10px black, 0 0 25px inset black;
+  font-size: 2em;
+}
+main .roads #roads #carousel #elements-con #elements .element #photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80%;
+  overflow: hidden;
+}
+main .roads #roads #carousel #elements-con #elements .element #photo img {
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .roads #roads #carousel #elements-con #elements .element #details {
+  direction: rtl;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(18, 187, 145, 0.8);
+  top: 100%;
+  height: 80%;
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: justify;
+}
+main .roads #roads #carousel #elements-con #elements .element:hover:not(.disabled) #details {
+  top: 20%;
+}
+main .roads #roads #carousel #elements-con #elements .element:hover:not(.disabled) #photo img {
+  -webkit-transform: scale(1.1) rotate(5deg);
+          transform: scale(1.1) rotate(5deg);
+}
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30vh;
+}
+footer #photo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer #photo img {
+  width: 100%;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+footer .con1 {
+  background-color: #181b1d;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-shadow: 0 0 50px black;
+          box-shadow: 0 0 50px black;
+}
+footer .con2 {
+  background-color: #101213;
+  height: 46vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  -webkit-box-shadow: 0 0 50px black;
+          box-shadow: 0 0 50px black;
+}
+footer #content {
+  -webkit-box-shadow: 0 0 50px black;
+          box-shadow: 0 0 50px black;
+  width: 100%;
+  background-color: #0d0f0f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 10vh;
+  gap: 2em;
+  height: 40vh;
+}
+footer #content ul {
+  list-style: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+}
+footer #content ul li {
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+footer #content ul li a {
+  height: 100%;
+  width: 100%;
+}
+footer #content ul li a img {
+  height: 100%;
+  width: 100%;
+}
+footer #content ul:hover li {
+  top: -10%;
+}
+footer #content p {
+  -ms-flex-item-align: center;
+      align-self: center;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1199px) {
+  main .roads #roads #carousel #elements-con #elements .element #details {
+    font-size: 1.05rem;
+  }
+}
+@media (max-width: 991px) {
+  main {
+    gap: 10vh;
+  }
+  main #definition img {
+    display: none;
+  }
+  main #definition #content {
+    width: 75%;
+  }
+  main #definition #content h1 {
+    font-size: 3.5em;
+  }
+  main #definition #content p {
+    font-size: 1.4em;
+  }
+  main .roads #roads h2 {
+    font-size: 3.5em;
+  }
+  main .roads #roads #carousel {
+    height: 45vw;
+  }
+  main .roads #roads #carousel #elements-con #elements .element {
+    width: 37.5vw;
+    height: 45vw;
+  }
+  main .roads #roads #carousel #elements-con #elements .element .title {
+    font-size: 2.5em;
+  }
+  main .roads #roads #carousel #elements-con #elements .element #details {
+    font-size: 1.24em;
+  }
+}
+@media (max-width: 767px) {
+  main #definition #content {
+    width: 100%;
+  }
+  main #definition #content h1 {
+    font-size: 3em;
+  }
+  main #definition #content p {
+    font-size: 1.2em;
+  }
+  main .roads #roads h2 {
+    font-size: 3em;
+  }
+  main .roads #roads #carousel {
+    height: 60vw;
+  }
+  main .roads #roads #carousel #elements-con {
+    width: 59vw;
+  }
+  main .roads #roads #carousel #elements-con #elements .element {
+    width: 55vw;
+    height: 60vw;
+  }
+  main .roads #roads #carousel #elements-con #elements .element #title {
+    font-size: 2.5em;
+  }
+  main .roads #roads #carousel #elements-con #elements .element #details {
+    font-size: 1.2em;
+    padding: 5%;
+  }
+}
+@media (max-width: 499px) {
+  main {
+    gap: 0;
+  }
+  main #definition #content h1 {
+    font-size: 2em;
+  }
+  main #definition #content p {
+    font-size: 0.9em;
+  }
+  main .roads #roads h2 {
+    font-size: 2em;
+  }
+  main .roads #roads #carousel #elements-con #elements .element #title {
+    font-size: 1.3em;
+  }
+  main .roads #roads #carousel #elements-con #elements .element #details {
+    font-size: 0.75em;
+    padding: 4%;
+  }
+
+  footer {
+    margin-top: 15vh;
+  }
+  footer .con1 .con2 #content {
+    padding: 10vh 4vw;
+  }
+  footer .con1 .con2 #content p {
+    font-size: 0.8em;
+  }
+}

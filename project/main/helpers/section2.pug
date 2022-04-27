@@ -1,12 +1,16 @@
-section#roads
-    h1 المجالات
-    #carousel
-        #left-arrow
-        #elements-con
-            #elements
-                //- link, name, disabled, title, img, details
-                +element('../programming/index.html', 'programming', false, 'البرمجة', '../img/code-1076536_640.jpg', 'لتعلم البرمجة ومجالاتها المسار سيساعدك في تعلم تطوير الويب بالذات رغم وجود مسارات لباقي مجالات البرمجة الأخرى الا أن المعلومات سطحية وليست بدسامة مجال الويب')
-                +element('#', 'english', true, 'الانجليزي', '../img/rS22pEaa0EpHMKAA.jpg', 'هذا المسار سيأخذك من مرحلة ما قبل التأسيس حتى تطوير اللغة في مهارة القراءة والكتابة والاستماع والتحدث')
-                +element('../qudrat/index.html', 'qudrat', false, 'القدرات', '../img/EDxeiE8XYAAr2mY.jpg', 'هذا المسار هو رأي شخصي وهو المسار الذي احتذيته وبفضل الله ثم اتباعي له حصلت من أول محاولة على الدرجة 91 ومن ثاني محاولة على الدرجة 97 وهو مسار سيفيد غالبا في القسم الكمي أما اللفظي فلا زلت أواجه مشاكلا في التعامل معه')
-                +element('../fast_typing/index.html', 'fast-typing', false, 'الطباعة باللمس', '../img/type.jpg', 'الطباعة باللمس مهارة سهلة يمكن اتقانها باسابيع قليلة بل حتى ايام اذا تم بذل الجهد الكافي ومع الممارسة قد تتعدى مرحلة الاتقان وتصل الى الاحتراف وذلك ليس بالأمر الصعب')
-        #right-arrow
+section.roads
+    #roads
+        h2 المجالات
+        #carousel
+            #left-arrow
+                img(src="../img/icons8-chevron-up-60.png" alt="arrow")
+            #elements-con
+                #elements
+                    //- link, name, disabled, title, img, details
+                    +element('../programming/index.html', 'programming', false, 'البرمجة', '../img/code-1076536_640.jpg', 'لتعلم البرمجة ومجالاتها المسار سيساعدك في تعلم تطوير الويب بالذات رغم وجود مسارات لباقي مجالات البرمجة الأخرى الا أن المعلومات سطحية وليست بدسامة مجال الويب')
+                    +element('#', 'english', true, 'الانجليزي', '../img/rS22pEaa0EpHMKAA.jpg', 'هذا المسار سيأخذك من مرحلة ما قبل التأسيس حتى تطوير اللغة في مهارة القراءة والكتابة والاستماع والتحدث')
+                    +element('../qudrat/index.html', 'qudrat', false, 'القدرات', '../img/EDxeiE8XYAAr2mY.jpg', '91 هي الدرجة التي حصلت عليها من اول محاولة (ورقي)، 97 هي الدرجة التي حصلت عليها من ثاني محاولة (محوسب)، سيفيدك المسار في القسمين لكنه اكثر افادة في القسم الكمي')
+                    +element('../fast_typing/index.html', 'fast-typing', false, 'الطباعة باللمس', '../img/type.jpg', 'الطباعة باللمس مهارة سهلة يمكن اتقانها باسابيع قليلة بل حتى ايام اذا تم بذل الجهد الكافي ومع الممارسة قد تتعدى مرحلة الاتقان وتصل الى الاحتراف وذلك ليس بالأمر الصعب')
+            #right-arrow
+                img(src="../img/icons8-chevron-up-60.png" alt="arrow")
+

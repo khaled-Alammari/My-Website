@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv>
     <title>خالد | الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&amp;amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&amp;amp;display=swap">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../style.css">
   </head>
@@ -11,12 +13,20 @@
     <header>
       <div id="logo"></div>
       <nav>
+        <div class="menu"><img src="../img/icons8-menu-48.png" alt="menu"></div>
         <ul>
           <li>المجالات</li>
           <li class="disabled"><a title="الصفحة قيد التطوير">أعمالي</a></li>
         </ul>
       </nav>
     </header>
+    <div class="dropdown-menu">
+      <ul>
+        <div class="close-menu"><img src="../img/icons8-close-96.png" alt="close"></div>
+        <li>المجالات</li>
+        <li class="disabled"><a title="الصفحة قيد التطوير">أعمالي</a></li>
+      </ul>
+    </div>
     <main>
       <section id="definition"><img src="../img/undraw_product_teardown_re_m1pc.svg" alt="*photo">
         <div id="content">
@@ -28,27 +38,29 @@
           </p>
         </div>
       </section>
-      <section id="roads">
-        <h1>المجالات</h1>
-        <div id="carousel">
-          <div id="left-arrow"></div>
-          <div id="elements-con">
-            <div id="elements"><a class="element programming" href="../programming/index.html" title="">
-                <div id="title">البرمجة</div>
-                <div id="photo"><img src="../img/code-1076536_640.jpg" alt="البرمجة"/></div>
-                <div id="details">لتعلم البرمجة ومجالاتها المسار سيساعدك في تعلم تطوير الويب بالذات رغم وجود مسارات لباقي مجالات البرمجة الأخرى الا أن المعلومات سطحية وليست بدسامة مجال الويب</div></a><a class="element english disabled" href="#" title="الصفحة قيد التطوير">
-                <div id="title">الانجليزي</div>
-                <div id="photo"><img src="../img/rS22pEaa0EpHMKAA.jpg" alt="الانجليزي"/></div>
-                <div id="details">هذا المسار سيأخذك من مرحلة ما قبل التأسيس حتى تطوير اللغة في مهارة القراءة والكتابة والاستماع والتحدث</div></a><a class="element qudrat" href="../qudrat/index.html" title="">
-                <div id="title">القدرات</div>
-                <div id="photo"><img src="../img/EDxeiE8XYAAr2mY.jpg" alt="القدرات"/></div>
-                <div id="details">هذا المسار هو رأي شخصي وهو المسار الذي احتذيته وبفضل الله ثم اتباعي له حصلت من أول محاولة على الدرجة 91 ومن ثاني محاولة على الدرجة 97 وهو مسار سيفيد غالبا في القسم الكمي أما اللفظي فلا زلت أواجه مشاكلا في التعامل معه</div></a><a class="element fast-typing" href="../fast_typing/index.html" title="">
-                <div id="title">الطباعة باللمس</div>
-                <div id="photo"><img src="../img/type.jpg" alt="الطباعة باللمس"/></div>
-                <div id="details">الطباعة باللمس مهارة سهلة يمكن اتقانها باسابيع قليلة بل حتى ايام اذا تم بذل الجهد الكافي ومع الممارسة قد تتعدى مرحلة الاتقان وتصل الى الاحتراف وذلك ليس بالأمر الصعب</div></a>
+      <section class="roads">
+        <div id="roads">
+          <h2>المجالات</h2>
+          <div id="carousel">
+            <div id="left-arrow"><img src="../img/icons8-chevron-up-60.png" alt="arrow"></div>
+            <div id="elements-con">
+              <div id="elements"><a class="element programming" href="../programming/index.html" title="">
+                  <div id="title">البرمجة</div>
+                  <div id="photo"><img src="../img/code-1076536_640.jpg" alt="البرمجة"/></div>
+                  <div id="details">لتعلم البرمجة ومجالاتها المسار سيساعدك في تعلم تطوير الويب بالذات رغم وجود مسارات لباقي مجالات البرمجة الأخرى الا أن المعلومات سطحية وليست بدسامة مجال الويب</div></a><a class="element english disabled" href="#" title="الصفحة قيد التطوير">
+                  <div id="title">الانجليزي</div>
+                  <div id="photo"><img src="../img/rS22pEaa0EpHMKAA.jpg" alt="الانجليزي"/></div>
+                  <div id="details">هذا المسار سيأخذك من مرحلة ما قبل التأسيس حتى تطوير اللغة في مهارة القراءة والكتابة والاستماع والتحدث</div></a><a class="element qudrat" href="../qudrat/index.html" title="">
+                  <div id="title">القدرات</div>
+                  <div id="photo"><img src="../img/EDxeiE8XYAAr2mY.jpg" alt="القدرات"/></div>
+                  <div id="details">91 هي الدرجة التي حصلت عليها من اول محاولة (ورقي)، 97 هي الدرجة التي حصلت عليها من ثاني محاولة (محوسب)، سيفيدك المسار في القسمين لكنه اكثر افادة في القسم الكمي</div></a><a class="element fast-typing" href="../fast_typing/index.html" title="">
+                  <div id="title">الطباعة باللمس</div>
+                  <div id="photo"><img src="../img/type.jpg" alt="الطباعة باللمس"/></div>
+                  <div id="details">الطباعة باللمس مهارة سهلة يمكن اتقانها باسابيع قليلة بل حتى ايام اذا تم بذل الجهد الكافي ومع الممارسة قد تتعدى مرحلة الاتقان وتصل الى الاحتراف وذلك ليس بالأمر الصعب</div></a>
+              </div>
             </div>
+            <div id="right-arrow"><img src="../img/icons8-chevron-up-60.png" alt="arrow"></div>
           </div>
-          <div id="right-arrow"></div>
         </div>
       </section>
     </main>
@@ -64,7 +76,8 @@
         </div>
       </div>
     </footer>
-    <script src="./main.js"></script>
     <script src="../main.js"></script>
+    <script src="./main.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>

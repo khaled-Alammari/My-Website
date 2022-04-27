@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv>
     <title>خالد | البرمجة</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&amp;amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&amp;amp;display=swap">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../style.css">
   </head>
@@ -11,12 +13,20 @@
     <header><a href="../main/index.html">
         <div id="logo"></div></a>
       <nav>
+        <div class="menu"><img src="../img/icons8-menu-48.png" alt="menu"></div>
         <ul>
           <li><a href="../main/index.html">المجالات</a></li>
           <li class="disabled"><a title="الصفحة قيد التطوير">أعمالي</a></li>
         </ul>
       </nav>
     </header>
+    <div class="dropdown-menu">
+      <ul>
+        <div class="close-menu"><img src="../img/icons8-close-96.png" alt="close"></div>
+        <li><a href="../main/index.html">المجالات</a></li>
+        <li class="disabled"><a title="الصفحة قيد التطوير">أعمالي</a></li>
+      </ul>
+    </div>
     <main>
       <section class="progress"><span></span></section>
       <section class="cards">
@@ -135,7 +145,8 @@
       </div>
       <div class="back"><span>عودة</span><img class="blue" src="../img/blueBackIcon.png" alt="back"><img class="white" src="../img/whiteBackIcon.png" alt="back"></div>
     </main>
-    <script src="./main.js"></script>
     <script src="../main.js"></script>
+    <script src="./main.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>
