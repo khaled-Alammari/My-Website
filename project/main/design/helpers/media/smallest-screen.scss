@@ -1,0 +1,50 @@
+@media (max-width: 499px) {
+    main {
+        gap: 0;
+        #definition {
+            #content {
+                h1 {
+                    font-size: 2em;
+                }
+                p {
+                    font-size: .9em;
+                }
+            }
+        }
+        .roads {
+            #roads {
+                h2 {
+                    font-size: 2em;
+                }
+                #carousel {
+                    #elements-con {
+                        #elements {
+                            .element {
+                                #title {
+                                    font-size: 1.3em;
+                                }
+                                #details {
+                                    font-size: .75em;
+                                    padding: 4%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: 15vh;
+        .con1 {
+            .con2 {
+                #content {
+                    padding: 10vh 4vw;
+                    p {
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+}
